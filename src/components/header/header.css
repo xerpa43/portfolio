@@ -1,0 +1,83 @@
+header {
+  padding-top: 7rem;
+  min-height: 105vh;
+  margin-bottom: 2rem;
+}
+
+.header-container {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.btns {
+  margin: 7rem 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.btns.header {
+  opacity: 0;
+  animation: bringBtn 2s linear forwards 3.7s;
+}
+.header-socials {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  left: -50%;
+  bottom: 3rem;
+  font-size: 2rem;
+  animation: slideSocial 3.1s linear forwards 0.7s;
+}
+
+@keyframes slideSocial {
+  to {
+    left: 0;
+  }
+}
+
+.header-socials::after {
+  content: "";
+  width: 1px;
+  height: 3rem;
+  background: var(--color-primary);
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-down {
+    display: none;
+  }
+  header {
+    padding-top: 0;
+  }
+
+  .header-socials {
+    flex-direction: row;
+    left: 0;
+    margin: 50%;
+    opacity: 0;
+    transform: translate(-50%, 100%);
+    animation: bringBtn 3s linear forwards 3.7s;
+  }
+
+  .btns {
+    margin: 9rem 3rem;
+  }
+}
+
+@keyframes bringBtn {
+  to {
+    opacity: 1;
+  }
+}

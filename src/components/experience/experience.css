@@ -1,0 +1,48 @@
+.experience-image {
+  transform: translateY(10px);
+  width: 4rem;
+  padding-bottom: 2rem;
+}
+
+section#experience h5 {
+  color: rgba(218, 241, 200, 0.904);
+  font-size: 1.5rem;
+}
+
+.container.experience-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.experience-container > div {
+  padding: 2rem 1rem;
+  background: rgb(81, 6, 81);
+  background: linear-gradient(transparent, rgb(0, 9, 74));
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .experience-container > div {
+    background: linear-gradient(rgb(55, 58, 86));
+    height: 310px;
+    margin: 10px;
+    padding: 0.4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container.experience-container {
+    justify-content: center;
+    height: auto;
+  }
+}

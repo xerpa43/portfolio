@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+section#projects {
+  display: grid;
+  row-gap: 5rem;
+  justify-items: center;
+}
+
+.card {
+  position: relative;
+  width: 21rem;
+  height: 300px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  height: 25rem;
+  width: 60rem;
+}
+
+.card .lines {
+  position: absolute;
+  border-radius: 15px;
+  inset: 0;
+
+  border-top: var(--border-col);
+  border-left: var(--border-col);
+  border-right: var(--border-col);
+
+  background: linear-gradient(rgb(19, 0, 45), transparent);
+
+  overflow: hidden;
+}
+
+.card .lines.add::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100rem;
+  height: 120rem;
+}
+
+.card .lines.add::after {
+  content: "";
+  border-radius: 9px;
+
+  position: absolute;
+  inset: 3px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.card .images {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  background: var(--color-bg);
+  width: 200px;
+  height: 200px;
+  transition: 0.8s;
+  z-index: 8;
+  overflow: hidden;
+}
+
+.card:hover .images {
+  width: 240px;
+  height: 240px;
+}
+
+.card .images.add::before {
+  content: "";
+  position: absolute;
+  border-radius: 4px;
+  top: 50%;
+  height: 30rem;
+  width: 30rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(transparent, rgb(0, 29, 44), rgb(65, 125, 255));
+  animation: animate2 4s linear infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.btn.btn-primary.disable:hover {
+  background: rgba(128, 128, 128, 0.774);
+  color: white;
+  cursor: not-allowed;
+}
+
+.card .images.add::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 5px;
+}
+
+.card .images img {
+  z-index: 1;
+  border-radius: 3px;
+  position: absolute;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  top: 10px;
+  left: 10px;
+}
+
+.card .info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card .info .detail {
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card .info .readme {
+  justify-content: space-between;
+  display: flex;
+
+  overflow: hidden;
+  font-weight: 400;
+  transform: translateY(40px);
+  border: 3px solid transparent;
+  width: auto;
+}
+
+.card .info .readme .lists {
+  margin-left: 10%;
+  position: relative;
+  text-align: left;
+  color: rgba(0, 255, 229, 0.642);
+}
+
+.card .info .readme .lists h3 {
+  color: rgb(199, 255, 249);
+}
+
+.card .info .readme .description {
+  color: rgb(255, 204, 108);
+  width: 250px;
+  text-align: left;
+  min-width: 0px;
+}
+
+.btns {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1024px) {
+
+  .card {
+    height: 27rem;
+    width: 40rem;
+  }
+  .card .info .readme .description {
+    width: 250px;
+  }
+  .card:hover .images {
+    width: 170px;
+    height: 170px;
+  }
+
+  .card .images {
+    width: 170px;
+    height: 170px;
+  }
+
+  .card .info .detail {
+    padding: 0 0;
+  }
+
+  .card .info .detail .readme {
+    transform: translateY(100px);
+  }
+
+  .btns {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card:hover{
+    height: 650px;
+    width: 350px;
+  }
+ 
+  
+  .card {
+    height: 650px;
+    width: 350px;
+  }
+
+  .card .info .detail .readme {
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    flex-direction: column;
+    height: 400px;
+  }
+}

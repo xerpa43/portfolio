@@ -1,0 +1,34 @@
+footer {
+  display: flex;
+  padding: 4rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-socials {
+  display: inline-block;
+
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.footer-socials a {
+  font-size: 2rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+
+.footer-logo {
+  height: 150px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.footer-logo img {
+  height: 400px;
+  transform: translateY(-30%);
+}

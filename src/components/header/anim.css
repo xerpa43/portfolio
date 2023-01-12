@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap");
+
+.container.header-anim {
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14vh;
+}
+
+#intro {
+  animation: what ease 2s forwards 2s;
+  stroke: whitesmoke;
+  stroke-width: 5;
+}
+
+#intro path:nth-child(1) {
+  stroke-dasharray: 510;
+  stroke-dashoffset: 510;
+  animation: animate 0.4s ease-in forwards;
+}
+
+#intro path:nth-child(2) {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: animate 0.5s ease forwards 0.6s;
+}
+
+#intro path:nth-child(3) {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: animate 0.5s ease forwards 1s;
+}
+
+#intro path:nth-child(4) {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: animate 0.5s ease forwards 0.8s;
+}
+
+#intro path:nth-child(5) {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: animate 0.5s ease forwards 0.4s;
+}
+
+#intro path:nth-child(6) {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: animate 0.5s ease forwards 1.2s;
+}
+
+#intro path:nth-child(7) {
+  stroke-dasharray: 670;
+  stroke-dashoffset: 670;
+  animation: animate 0.8s ease forwards 1.4s;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes what {
+  from {
+    stroke: whitesmoke;
+    fill: transparent;
+  }
+
+  to {
+    stroke: transparent;
+    fill: rgba(255, 253, 253, 0.671);
+  }
+}
+
+.animate {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.animate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: transparent;
+  background-color: aquamarine;
+  top: 0;
+  left: 0;
+  right: 100%;
+  z-index: 1;
+  height: 8rem;
+  animation: swipe-right 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards 2s;
+}
+
+.animate.extra::after {
+  background-color: #440f4e;
+  animation-delay: 3s;
+}
+
+.text {
+  background: transparent;
+  color: rgba(140, 242, 208, 0.934);
+  position: relative;
+  font-size: 4rem;
+  text-indent: 0px;
+  opacity: 0;
+  width: auto;
+  text-transform: uppercase;
+  animation: mainFadeIn 0.5s forwards 2.5s;
+}
+
+.text.small {
+  color: rgba(110, 22, 118, 0.877);
+  font-size: 3rem;
+  animation-delay: 3.3s;
+}
+
+@keyframes mainFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes swipe-right {
+  0% {
+    left: 0;
+    width: 0;
+    right: 100%;
+  }
+
+  50% {
+    left: 0;
+    width: 100%;
+    right: 0%;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #intro {
+    height: 2rem;
+  }
+  .container.header-anim {
+    height: auto;
+  }
+
+  .animate h1 {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 3rem;
+  }
+  .animate::after {
+    height: 6vh;
+  }
+
+  .animation {
+    height: 5rem;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #intro {
+    height: 20px;
+  }
+
+  .animate .text {
+    font-size: 1.8rem;
+  }
+  .animate.extra .text {
+    font-size: 1.5rem;
+  }
+
+  .animate::after {
+    height: 7vh;
+  }
+
+  .animate.extra::after {
+    height: 5vh;
+  }
+
+  .animation {
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+}
