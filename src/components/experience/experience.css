@@ -1,3 +1,5 @@
+
+
 .experience-image {
   transform: translateY(10px);
   width: 4rem;
@@ -18,10 +20,13 @@ section#experience h5 {
 
 .experience-container > div {
   padding: 2rem 1rem;
-  background: rgb(81, 6, 81);
-  background: linear-gradient(transparent, rgb(0, 9, 74));
+  background: rgba(81, 6, 81, 0);
+  /* background: linear-gradient(transparent, rgb(0, 9, 74)); */
   width: 15rem;
+  border: 3px solid white;
   border-radius: 10px;
+  margin: 0 1rem;
+  backdrop-filter: blur(30px);
 }
 
 .skill {
@@ -33,7 +38,7 @@ section#experience h5 {
 
 @media screen and (max-width: 1024px) {
   .experience-container > div {
-    background: linear-gradient(rgb(55, 58, 86));
+    /* background: linear-gradient(rgb(55, 58, 86)); */
     height: 310px;
     margin: 10px;
     padding: 0.4rem 2rem;

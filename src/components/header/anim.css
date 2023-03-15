@@ -10,7 +10,7 @@
 
 #intro {
   animation: what ease 2s forwards 2s;
-  stroke: whitesmoke;
+  stroke: rgb(255, 255, 255);
   stroke-width: 5;
 }
 
@@ -64,13 +64,13 @@
 
 @keyframes what {
   from {
-    stroke: whitesmoke;
+    stroke: rgb(255, 255, 255);
     fill: transparent;
   }
 
   to {
     stroke: transparent;
-    fill: rgba(255, 253, 253, 0.671);
+    fill: rgb(255, 255, 255);
   }
 }
 
@@ -84,7 +84,7 @@
   display: block;
   position: absolute;
   background: transparent;
-  background-color: aquamarine;
+  background-color: rgba(105, 105, 105, 0);
   top: 0;
   left: 0;
   right: 100%;
@@ -94,24 +94,31 @@
 }
 
 .animate.extra::after {
-  background-color: #440f4e;
+  
+  background-color: #1c0144;
   animation-delay: 3s;
 }
 
 .text {
   background: transparent;
-  color: rgba(140, 242, 208, 0.934);
+  color: rgba(255, 255, 255, 0.934);
   position: relative;
+  clip-path: fill-box;
   font-size: 4rem;
   text-indent: 0px;
+  
   opacity: 0;
   width: auto;
   text-transform: uppercase;
   animation: mainFadeIn 0.5s forwards 2.5s;
+  font-weight: 700;
+
+  color:transparent;
+
 }
 
 .text.small {
-  color: rgba(110, 22, 118, 0.877);
+  color: rgba(0, 255, 81, 0.877);
   font-size: 3rem;
   animation-delay: 3.3s;
 }
@@ -193,4 +200,11 @@
     height: 3rem;
     font-size: 1.3rem;
   }
+}
+
+.animate .text.name{
+  color:rgba(128, 0, 128, 0);
+  font-size: 4rem;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }

@@ -5,6 +5,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: radial-gradient(circle at 0% 100%, rgb(31, 3, 91) 0%, rgba(5, 21, 115, 0.517) 3%, rgba(38, 255, 0, 0) 20%);
 }
 
 .footer-socials {

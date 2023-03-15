@@ -1,9 +1,17 @@
+#about{
+  background-image:radial-gradient(circle at 0% 50%,rgba(255, 0, 230, 0.684) 0%,rgba(255, 0, 238, 0.355) 5%, rgba(0, 0, 0, 0) 16%);
+
+}
 .about-container {
   height: 50vh;
+  background:transparent;
 
   display: grid;
+  
   gap: 15%;
   grid-template-columns: 20% 60%;
+  border-right: 4px solid rgb(0, 148, 128);
+ 
 }
 
 #about h2 {
@@ -29,8 +37,8 @@
   font-size: 1.3rem;
   width: auto;
   border-radius: 0;
-  font-weight: 100;
-  color: rgb(240, 248, 255);
+  font-weight: 250;
+  color: rgb(255, 255, 255);
 }
 
 .about-cards {

@@ -13,7 +13,7 @@
 
 :root {
   --color-bga: #1e132c;
-  --color-bg: linear-gradient(
+  /* --color-bg: linear-gradient(
     rgb(41, 1, 28),
     rgb(1, 1, 35),
     rgb(53, 0, 42),
@@ -23,8 +23,19 @@
     rgb(43, 0, 42),
     rgb(37, 1, 37),
     rgb(28, 2, 49)
+  ); */
+  --color-bg: linear-gradient(
+    rgb(0, 0, 0),
+    rgb(7, 0, 70),
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(30, 0, 24),
+    rgb(11, 7, 18),
+    rgb(0, 0, 0),
+    rgb(90, 2, 90),
+    rgb(0, 0, 43)
   );
-  --border-col: 6px solid rgba(255, 255, 255, 0.468);
+  --border-col: 6px solid rgba(100, 99, 99, 0.419);
   --color-bg-varient: rgb(61, 0, 61);
   --color-primary: #c3c3c3;
   --color-primary-varient: rgb(215 125 162);
@@ -106,7 +117,7 @@ a:hover {
 
 .btn {
   width: max-content;
-  color: gray;
+  color: rgb(255, 255, 255);
   display: inline-block;
   padding: 0.8rem 1.2rem;
   border-radius: 0.4rem;
@@ -122,8 +133,10 @@ a:hover {
 }
 
 .btn-primary {
-  color: var(--color-bg);
-  background: rgba(128, 128, 128, 0.774);
+  color:rgb(0, 0, 0);
+ 
+  background: rgb(60, 255, 1);
+  border: transparent;
 }
 
 img {

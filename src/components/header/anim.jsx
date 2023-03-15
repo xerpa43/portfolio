@@ -23,7 +23,7 @@ const anim = () => {
       </svg>
 
       <div className="animate">
-        <small className="text">Ang Ngima Sherpa</small>
+        <small className="text name">Ang Ngima Sherpa</small>
       </div>
       <div className="animate extra">
         <h4 className="text small">Front-end Developer</h4>
