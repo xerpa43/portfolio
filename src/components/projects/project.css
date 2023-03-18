@@ -94,7 +94,7 @@ section#projects {
   width: 30rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(transparent, rgb(0, 29, 44), rgb(65, 125, 255));
+  background: linear-gradient(transparent, rgba(32, 229, 255, 0), rgb(217, 28, 226));
   animation: animate2 4s linear infinite;
 }
 
