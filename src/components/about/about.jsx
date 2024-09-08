@@ -12,8 +12,8 @@ const about = () => {
         <div className="about-me">
           <div className="about-me info">
             <p>
-              Hi There, <br />I am a junior webflow designer and{" "}
-              <span className="Red"> Red Hat System Administrator </span> . I
+              Hi There, <br />I am a <span className="Red"> Webflow and graphic designer</span> 
+             .I
               have passion for creating websites and constantly strive to
               improve my skills. I am able to complete projects independently
               with a high level of efficiency. I am excited to bring my skills
