@@ -12,7 +12,7 @@ const about = () => {
         <div className="about-me">
           <div className="about-me info">
             <p>
-              Hi There <br />I am an entry level developer and{" "}
+              Hi There, <br />I am a junior webflow designer and{" "}
               <span className="Red"> Red Hat System Administrator </span> . I
               have passion for creating websites and constantly strive to
               improve my skills. I am able to complete projects independently
