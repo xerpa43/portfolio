@@ -17,11 +17,7 @@ const experience = () => {
             <img src={frontend} alt="the" className="experience-image" />
 
             <article className="skills in">
-              <h3>HTML</h3>
-            </article>
-
-            <article className="skills in">
-              <h3>CSS</h3>
+              <h3>HTML, CSS</h3>
             </article>
 
             <article className="skills in">
@@ -33,7 +29,7 @@ const experience = () => {
             </article>
 
             <article className="skills in">
-              <h3>Bootstrap</h3>
+              <h3>Webflow</h3>
             </article>
           </div>
         </div>
@@ -48,10 +44,6 @@ const experience = () => {
 
             <article className="skills in">
               <h3>PHP</h3>
-            </article>
-
-            <article className="skills in">
-              <h3>Laravel</h3>
             </article>
           </div>
         </div>
@@ -76,7 +68,10 @@ const experience = () => {
             </article>
 
             <article className="skills in">
-              <h3>Canva</h3>
+              <h3>Photoshop</h3>
+            </article>
+              <article className="skills in">
+              <h3>Adobe Illustrator</h3>
             </article>
           </div>
         </div>
