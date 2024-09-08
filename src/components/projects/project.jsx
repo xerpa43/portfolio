@@ -109,7 +109,7 @@ const Project = () => {
               </a>
 
               <a
-                href="https://nimashoptemp.000webhostapp.com/"
+                href="https://ecomwebsite-three.vercel.app/"
                 className="btn btn-primary"
                 target="_blank"
               >
@@ -162,7 +162,7 @@ const Project = () => {
                 Github
               </a>
               <a
-                href="https://gamengs.000webhostapp.com/"
+                href="https://game-roan-gamma.vercel.app/"
                 className="btn btn-primary"
                 target="_blank"
               >
