@@ -12,7 +12,7 @@ const about = () => {
         <div className="about-me">
           <div className="about-me info">
             <p>
-              Hi There, <br />I am a <span className="Red"> Webflow and graphic designer</span> 
+              Hi There, <br />I am a <span className="Red"> Webflow & Graphic Designer</span> 
              .I
               have passion for creating websites and constantly strive to
               improve my skills. I am able to complete projects independently
