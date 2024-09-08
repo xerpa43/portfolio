@@ -14,7 +14,7 @@ const about = () => {
             <p>
               Hi There, <br />I am a <span className="Red"> Webflow & Graphic Designer</span> 
              .I
-              have passion for creating websites and constantly strive to
+              have passion for creating design and art and constantly strive to
               improve my skills. I am able to complete projects independently
               with a high level of efficiency. I am excited to bring my skills
               and experience to new challenges and opportunities{" "}
