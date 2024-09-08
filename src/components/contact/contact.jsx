@@ -36,13 +36,6 @@ const Contact = () => {
             <h5>angngima47@gmail.com</h5>
             <a href="mailto:angngima47@gmail.com" target="_blank">Send Message</a>
           </div>
-          <div className="contact-type">
-            <FaFacebookMessenger className='contact-icon' />
-            <h5>Ang Ngima Sherpa</h5>
-            <a href="https://m.me/angngima.sherpa.52" target="_blank">Send Message</a>
-          </div>
-
-
         </div>
 
         <form ref={form} onSubmit={sendEmail} className={forms}>
@@ -52,7 +45,7 @@ const Contact = () => {
           <textarea name='Info' rows='6' placeholder='Information You like to send' required />
           <button className='btn btn-primary sending'>Send</button>
 
-          {status === true ? <div className="status true">Your message has been received</div>
+          {status === true ? <div className="status true">The message was sent successfully.</div>
             : status === false ? <div className='status false'>Sorry! There was a problem</div>
               : ''}
         </form>
