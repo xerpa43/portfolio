@@ -7,9 +7,7 @@ const footer = () => {
   return (
     <footer>
       <div className="footer-socials">
-        <a target="_blank" href="https://www.facebook.com/angngima.sherpa.52/">
-          <FaFacebook />
-        </a>
+      
         <a target="_blank" href="https://github.com/xerpa43">
           <FaGithub />
         </a>
